@@ -1,0 +1,75 @@
+#---EXFOR Request #1058
+#---EXFOR Standard Output---
+#=============================================================================
+#DATASET        L0130003 
+#NOW            2022/01/17:06:14:44
+#SUBENT         L0130003   20060510
+#ENTRY          L0130      20060510
+#AUTHOR1        K.Shoda+
+#YEAR           1962
+#X4REF1         J,JPJ,17,735,1962
+#REFERENCE1     Jour: Journal of the Physical Society of Japan, Vol.17, p.735 (1962)
+#REACTION       13-AL-27(G,P)12-MG-26,,SIG,,BRS
+#D4REAC         R0#
+#C4Reaction     (G,P),SIG,,BRS
+#ReactionType   CS
+#Quantity       Cross section
+#IndVarFamCode  [0 2        ]
+#ExpectedUnits  [B]
+#xVariables     1
+#+              Y = Y(X1)
+#COLUMNS        3
+#HEADER         7           3           12
+!DATA        ERR-S       EN          
+!MB          MB          MEV         
+!Y.Value     Y.sErr+-    X1.Value    
+!0.1         0.944       1.1         
+!variable    variable    variable    
+!0.001       0.001       1000000.0   
+!B           B           EV          
+#DATA           20          3           12
+ 0.189                   14.5        
+ 0.151                   15.         
+ 0.256                   15.5        
+ 0.253                   15.9        
+ 0.501                   16.4        
+ 0.57                    16.9        
+ 1.42                    17.4        
+ 1.71                    17.8        
+ 2.56                    18.4        
+ 3.56                    19.         
+ 4.2                     19.6        
+ 5.06        0.357       20.         
+ 6.38                    20.5        
+ 8.74                    21.         
+ 10.5                    21.5        
+ 12.4                    22.         
+ 14.8                    22.4        
+ 16.6                    22.9        
+ 19.7                    23.4        
+ 22.5        0.536       23.9        
+#ENDDATA        20          3
+#Legend         3           12
+#
+#COL-1         : Data        : variable    
+#+   Rank      : 0.1         : Y.Value     
+#+   Type      : 21          : 0.1         
+#+   Header    : DATA        : [Data: data]
+#+   Units     : MB          : [millibarns]
+#+   BasicUnits: B           : Conv.Factor=0.001
+#
+#COL-2         : Error       : variable    
+#+   Rank      : 0.944       : Y.sErr+-    
+#+   Type      : 21          : 0.944       
+#+   Header    : ERR-S       : [Uncertainty: +-statistical error]
+#+   Units     : MB          : [millibarns]
+#+   BasicUnits: B           : Conv.Factor=0.001
+#
+#COL-3         : Data        : variable    
+#+   Rank      : 1.1         : X1.Value    
+#+   Type      : 41          : 2.1         
+#+   Header    : EN          : [Incident energy: energy]
+#+   Units     : MEV         : [MeV]
+#+   BasicUnits: EV          : Conv.Factor=1.e+06
+#
+#ENDDATASET     L0130003 

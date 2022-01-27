@@ -1,0 +1,80 @@
+#---EXFOR Request #3889
+#---EXFOR Standard Output---
+#=============================================================================
+#DATASET        22433024 
+#NOW            2022/01/27:10:20:20
+#SUBENT         22433024   20120409
+#ENTRY          22433      20150824
+#AUTHOR1        Y.Kasugai+
+#YEAR           1998
+#X4REF1         J,ANE,25,(1-3),23,1998
+#REFERENCE1     Jour: Annals of Nuclear Energy, Vol.25, Issue.1-3, p.23 (1998)
+#REACTION       47-AG-107(N,P)46-PD-107-M,,SIG
+#D4REAC         R0#
+#C4Reaction     (N,P),SIG
+#ReactionType   CS
+#Quantity       Cross section
+#IndVarFamCode  [0 2        ]
+#ExpectedUnits  [B]
+#xVariables     1
+#+              Y = Y(X1)
+#COLUMNS        6
+#HEADER         7           6           12
+!DATA        ERR-T       ERR-1       ERR-2       EN          EN-ERR      
+!MB          PER-CENT    PER-CENT    PER-CENT    MEV         KEV         
+!Y.Value     Y.Err+-     Y.pErr+-    Y.pErr+-    X1.Value    X1.Err+-    
+!0.1         0.911       0.955       0.955       1.1         1.911       
+!variable    variable    variable    const       variable    const       
+!0.001       1.0         1.0         1.0         1000000.0   1000.0      
+!B           PER-CENT    PER-CENT    PER-CENT    EV          EV          
+#DATA           6           6           12
+ 7.7         10.         8.3         5.2         13.4        50.         
+ 7.3         9.6         8.          5.2         13.65       50.         
+ 7.2         10.         8.9         5.2         13.88       50.         
+ 7.9         11.         9.4         5.2         14.28       50.         
+ 7.4         11.         9.9         5.2         14.58       50.         
+ 7.3         11.         9.2         5.2         14.87       50.         
+#ENDDATA        6           6
+#Legend         6           12
+#
+#COL-1         : Data        : variable    
+#+   Rank      : 0.1         : Y.Value     
+#+   Type      : 21          : 0.1         
+#+   Header    : DATA        : [Data: data]
+#+   Units     : MB          : [millibarns]
+#+   BasicUnits: B           : Conv.Factor=0.001
+#
+#COL-2         : Error       : variable    
+#+   Rank      : 0.911       : Y.Err+-     
+#+   Type      : 21          : 0.911       
+#+   Header    : ERR-T       : [Uncertainty: +-error]
+#+   Units     : PER-CENT    : [per-cent]
+#
+#COL-3         : Error       : variable    
+#+   Rank      : 0.955       : Y.pErr+-    
+#+   Type      : 21          : 0.955       
+#+   Header    : ERR-1       : [Uncertainty: +-partial error]
+#+   Units     : PER-CENT    : [per-cent]
+#
+#COL-4         : Error       : constant    
+#+   Rank      : 0.955       : Y.pErr+-    
+#+   Type      : 21          : 0.955       
+#+   Header    : ERR-2       : [Uncertainty: +-partial error]
+#+   Units     : PER-CENT    : [per-cent]
+#
+#COL-5         : Data        : variable    
+#+   Rank      : 1.1         : X1.Value    
+#+   Type      : 41          : 2.1         
+#+   Header    : EN          : [Incident energy: energy]
+#+   Units     : MEV         : [MeV]
+#+   BasicUnits: EV          : Conv.Factor=1.e+06
+#
+#COL-6         : Error       : constant    
+#+   Rank      : 1.911       : X1.Err+-    
+#+   Type      : 41          : 2.911       
+#+   Header    : EN-ERR      : [Uncertainty: +-error]
+#+   Units     : KEV         : [keV]
+#+   BasicUnits: EV          : Conv.Factor=1000.
+#
+#ENDDATASET     22433024 
+
